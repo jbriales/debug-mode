@@ -1,0 +1,77 @@
+{
+  "name": "debug-mode",
+  "displayName": "Debug Mode",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:debugMode.toggle"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "debugMode.toggle",
+        "title": "Debug Mode: Toggle"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+d ctrl+d",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+      },
+      {
+        "key": "ctrl+d ctrl+d",
+        "command": "debugMode.toggle",
+        "when": "debugState != 'inactive'"
+      },
+      {
+        "key": "n",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugMode.active && debugState == 'stopped'"
+      },
+      {
+        "key": "s",
+        "command": "workbench.action.debug.stepInto",
+        "when": "debugMode.active && debugState != 'inactive'"
+      },
+      {
+        "key": "f",
+        "command": "workbench.action.debug.stepOut",
+        "when": "debugMode.active && debugState == 'stopped'"
+      },
+      {
+        "key": "c",
+        "command": "workbench.action.debug.continue",
+        "when": "debugMode.active && debugState == 'stopped'"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.71.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "@vscode/test-electron": "^2.1.5"
+  }
+}
