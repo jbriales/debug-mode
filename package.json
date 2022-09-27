@@ -34,22 +34,22 @@
       {
         "key": "n",
         "command": "workbench.action.debug.stepOver",
-        "when": "debugMode.active && debugState == 'stopped'"
+        "when": "debugMode.active && editorTextFocus && debugState == 'stopped'"
       },
       {
         "key": "s",
         "command": "workbench.action.debug.stepInto",
-        "when": "debugMode.active && debugState != 'inactive'"
+        "when": "debugMode.active && editorTextFocus && debugState != 'inactive'"
       },
       {
         "key": "f",
         "command": "workbench.action.debug.stepOut",
-        "when": "debugMode.active && debugState == 'stopped'"
+        "when": "debugMode.active && editorTextFocus && debugState == 'stopped'"
       },
       {
         "key": "c",
         "command": "workbench.action.debug.continue",
-        "when": "debugMode.active && debugState == 'stopped'"
+        "when": "debugMode.active && editorTextFocus && debugState == 'stopped'"
       },
       {
         "key": "b",
