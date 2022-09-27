@@ -70,6 +70,11 @@
         "key": "v",
         "command": "editor.debug.action.showDebugHover",
         "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
+        "key": "g",
+        "command": "editor.action.revealDefinition",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
       }
     ]
   },
