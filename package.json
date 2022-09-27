@@ -32,6 +32,11 @@
         "when": "inDebugMode"
       },
       {
+        "key": "i",
+        "command": "debugMode.toggle",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
         "key": "n",
         "command": "workbench.action.debug.stepOver",
         "when": "debugMode.active && editorTextFocus && inDebugMode"
