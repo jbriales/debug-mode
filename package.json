@@ -50,6 +50,11 @@
         "key": "c",
         "command": "workbench.action.debug.continue",
         "when": "debugMode.active && debugState == 'stopped'"
+      },
+      {
+        "key": "b",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "debugMode.active && editorTextFocus && debugState != 'inactive'"
       }
     ]
   },
