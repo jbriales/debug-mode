@@ -60,6 +60,11 @@
         "key": "q",
         "command": "workbench.action.debug.stop",
         "when": "debugMode.active && editorTextFocus && debugState != 'inactive'"
+      },
+      {
+        "key": "v",
+        "command": "editor.debug.action.showDebugHover",
+        "when": "debugMode.active && editorTextFocus && debugState != 'inactive'"
       }
     ]
   },
