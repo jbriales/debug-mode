@@ -30,6 +30,11 @@
         "when": "debuggersAvailable && !inDebugMode"
       },
       {
+        "key": "ctrl+alt+d",
+        "command": "workbench.action.debug.selectandstart",
+        "when": "debuggersAvailable && !inDebugMode"
+      },
+      {
         "key": "ctrl+d",
         "command": "debugMode.toggle",
         "when": "inDebugMode"
