@@ -70,6 +70,31 @@
         "when": "debugMode.active && editorTextFocus && inDebugMode"
       },
       {
+        "key": "j",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
+        "key": "i",
+        "command": "workbench.action.debug.stepInto",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
+        "key": "l",
+        "command": "workbench.action.debug.stepOut",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
+        "key": "k",
+        "command": "workbench.action.debug.continue",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
+        "key": "o",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "debugMode.active && editorTextFocus && inDebugMode"
+      },
+      {
         "key": "q",
         "command": "workbench.action.debug.stop",
         "when": "debugMode.active && editorTextFocus && inDebugMode"
