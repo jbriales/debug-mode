@@ -35,7 +35,7 @@
         "when": "inDebugMode"
       },
       {
-        "key": "i",
+        "key": "space",
         "command": "debugMode.toggle",
         "when": "debugMode.active && editorTextFocus && inDebugMode"
       },
