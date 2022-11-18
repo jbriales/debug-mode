@@ -25,12 +25,12 @@
     ],
     "keybindings": [
       {
-        "key": "ctrl+d ctrl+d",
+        "key": "ctrl+d",
         "command": "workbench.action.debug.start",
         "when": "debuggersAvailable && !inDebugMode"
       },
       {
-        "key": "ctrl+d ctrl+d",
+        "key": "ctrl+d",
         "command": "debugMode.toggle",
         "when": "inDebugMode"
       },
